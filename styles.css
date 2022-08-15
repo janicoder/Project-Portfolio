@@ -111,7 +111,7 @@ footer {
     padding: 15px;
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 900px) {
     .main {
         padding: 0px;
         margin: 10px 5px;
