@@ -66,14 +66,14 @@ nav .link {
 }
 
 .main {
-    padding-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
     border-left: 2px solid rgb(172, 119, 4);
     border-right: 2px solid rgb(172, 119, 4);
     background-color: rgb(243, 220, 191);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    padding-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .main p, h2, h3 {
@@ -109,4 +109,38 @@ footer {
     color: rgb(153, 109, 15);
     border: 2px solid black;
     padding: 15px;
+}
+
+@media only screen and (max-width: 599px) {
+    .main {
+        padding: 0px;
+        margin: 10px 5px;
+    }
+    .main p, h2, h3 {
+        padding: 20px;
+        margin: 5px;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    nav .link {
+        display: flex;
+        width: unset;
+        font-size: 1.1rem;
+    }
+
+    #home {
+        display: none;
+    }
+
+    footer {
+        line-height: 20px;
+
+    }
 }
